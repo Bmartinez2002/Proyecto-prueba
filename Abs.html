@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS del Éxito</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #007bff, #00a8ff);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            background: #007bff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">ABS del Éxito</div>
+    <div class="main">
+        <div class="card">
+            <h2>Retos Personalizados</h2>
+            <p>Completa actividades y desbloquea logros únicos.</p>
+            <button class="button">Explorar Retos</button>
+        </div>
+        <div class="card">
+            <h2>Progreso Diario</h2>
+            <p>Monitorea tu avance y mantén la motivación.</p>
+            <button class="button">Ver Progreso</button>
+        </div>
+        <div class="card">
+            <h2>Comunidad Activa</h2>
+            <p>Conecta con otros usuarios y comparte tus logros.</p>
+            <button class="button">Unirse Ahora</button>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#retos">Retos</a>
+        <a href="#perfil">Perfil</a>
+    </div>
+</body>
+</html>
